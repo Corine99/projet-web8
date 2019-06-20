@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <!-- Déprécié : Autre manière d'indiquer la balise méta UTF-8 <meta charset="utf-8"/> -->
+        <title>Demo</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- Palette graphique : https://color.adobe.com/ -->
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <!-- ID = doit être unique au sein de la page / Class = peut être utilisée à différents endroits de la page -->
+
+        <main id="main-content" role="main">
+            <form action="SendInfo" method="POST">
+                <label for="name-id">Nom : </label>
+                <input id="name-id" type="text" name="name" placeholder="Nom" required maxlength="10" minlength="2" autocomplete="off"><br>
+
+                <label for="number-id">Nombre : </label>
+                <input id="number-id" type="number" name="nombre" min="0" value="0" max="10"> <br>
+
+                <label for="email-id">Email : </label>
+                <input id="email-id" type="email" name="email"><br>
+
+                <label for="password-id">Password : </label>
+                <input id="password-id" type="password" name="password" id="" placeholder="Mdp"><br>
+
+
+                <label for="search-id"> Champ de recherche : </label>
+                <input id="search-id" type="search" name="search"><br>
+
+                <label for="tel-id"> Tel : </label>
+                <input id="tel-id" type="tel" name=""> <br>
+
+                <label for="url-id"> Sites : </label>
+                <input id="url-id" type="url" name=""> <br>
+
+                <label for="file-id">Fichiers</label>
+                <input id="file-id" type="file" name="file" accept=".png, .jpg, .jpeg, .gif, .svg" multiple><br>
+
+                <input type="color" name="couleur"><br>
+                <input type="date" name="date"><br>
+                <input type="heure" name=""><br>
+
+                <textarea name="textarea" cols="30" rows="10" ></textarea>
+
+
+                <label for="css-id">CSS3</label>
+                <input id="css-id" type="checkbox" name="">
+
+                <label for="html-id">HTML5</label>
+                <input id="html-id" type="checkbox" name=""><br>
+
+
+                <label for="css-id">CSS</label>
+                <input id="css-id" type="radio" name="web">
+
+                <label for="html-id">HTML</label>
+                <input id="html-id" type="radio" name="web"><br><br><br>
+
+                <label for="web-id">Lang. Prog</label>
+
+                <select name="web-lang" id="web-id">
+                    <optgroup label="Front-end">
+                        <option value="default" selected disabled>Choisir un langage de programmation</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                    </optgroup>    
+                </select>
+
+                <fieldset>
+                    <legend>Mes coordonnées</legend>
+                    <label ></label>
+                    <input type="" name="">
+                </fieldset>
+
+                <button type="submit">Envoyer</button>
+
+            </form>
+        </main>
+
+    </body>
+</html>
